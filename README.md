@@ -20,7 +20,6 @@ This template contains all the things you need to get started with a clean and m
   - [Writing tests](#writing-tests)
   - [Continuous Integration (CI)](#continuous-integration-ci)
   - [Warnings as errors](#warnings-as-errors)
-  - [Gitmoji](#gitmoji)
 
 ## Setting up
 
@@ -124,6 +123,8 @@ To learn more about Doctest, see https://github.com/doctest/doctest/blob/master/
 
 > NB: This requires that you are using GitHub. GitLab also provides the same kinds of services, but you will have to set them up on your own, this template doesn't provide the necessary config files.
 
+Whenever you make a commit, GitHub servers will automatically try to build your code and run your tests and, if anything fails, it will warn you. CI is an essential part of development, as it ensures that you notice immediately if you break something. It also allows you to test your code on all the platforms (Windows, Linux, MacOS) and all the compilers (Clang, GCC, MSVC) and benefit from all the warnings they have to offer.
+
 You can see the progress (and eventual errors) of your tests in the *Actions* tab of your GitHub repository.
 
 ![image](https://user-images.githubusercontent.com/45451201/217274801-37bc38bd-055a-4a84-89b9-e2d56c798b2f.png)
@@ -138,5 +139,3 @@ If you want to have warnings as errors in your local project too (typically in o
  - Search for `CMake: Edit CMake Cache (UI)`
  - Turn `WARNINGS_AS_ERRORS` ON and then save
 ![image](https://user-images.githubusercontent.com/45451201/217280969-48939e75-0bad-4a9f-bdf6-08e37649c4c6.png)
-
-### Gitmoji
