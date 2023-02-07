@@ -1,0 +1,3 @@
+[submodule "p6"]
+	path = p6
+	url = https://github.com/JulesFouchy/p6
