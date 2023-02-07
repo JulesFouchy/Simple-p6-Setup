@@ -1,7 +1,7 @@
 # Simple-p6-Setup
 
-This project is a template 
-It works on all platforms (Windows, Linux, MacOS).
+This template contains all the things you need to get started with a clean and modern C++ project (formatter, linter, tests, continuous integration, etc.).
+**It works on all platforms (Windows, Linux, MacOS).**
 
 > **Please read the first three chapters very carefully as this project requires some specific setup, in particular when downloading (cloning) the repository.**
 
@@ -13,6 +13,8 @@ It works on all platforms (Windows, Linux, MacOS).
   - [Formatter](#formatter)
   - [Linter](#linter)
 - [Coding](#coding)
+  - [Renaming the project](#renaming-the-project)
+  - [Folder structure](#folder-structure)
   - [p6](#p6)
 - [Going further](#going-further)
   - [Writing tests](#writing-tests)
@@ -68,6 +70,30 @@ First, you need to [install and setup *clangd*](https://julesfouchy.github.io/Le
 [Setup clang-tidy](https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/lessons/static-analysers/).
 
 ## Coding
+
+### Renaming the project
+
+If you want to rename the project (called "Simple-p6-Setup" by default), you need to change it in 3 places:
+- In the `CMakeLists.txt`, change the line `project(Simple-p6-Setup)`
+- In the `.github/workflows/build_and_run_tests.yml`, change the line `TARGET: Simple-p6-Setup`
+- In the `src/main.cpp`, change the line `auto ctx = p6::Context{{.title = "Simple-p6-Setup"}};`
+
+### Folder structure
+
+All your source files (.cpp) and header files (.hpp) need to go in the `src` folder. It is recommended to have the corresponding .cpp and .hpp next to each other:
+
+```
+src
+   main.cpp
+   some_folder
+      some_file.cpp
+      some_file.hpp
+      another_file.cpp
+      another_file.hpp
+   another_folder
+      a_third_file.cpp
+      a_third_file.hpp
+```
 
 ### p6
 
