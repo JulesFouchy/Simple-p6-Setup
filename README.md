@@ -22,7 +22,7 @@ The `--recursive` is very important because [we make use of submodules](https://
 
 ## Compiling
 
-![image](https://user-images.githubusercontent.com/45451201/217267551-9134512a-6462-4637-963e-d1e5e9519f29.png)
+![initial-window](https://user-images.githubusercontent.com/45451201/217267551-9134512a-6462-4637-963e-d1e5e9519f29.png)
 
 ## Writing tests
 
@@ -37,7 +37,9 @@ TEST_CASE("Addition is commutative")
 }
 ```
 
-in *any* source file and the tests will run whenever you run your project. You will see their output in the console.
+in *any* source file and the tests will run whenever you run your project. You will see their output in the console:
+
+![tests-output](https://user-images.githubusercontent.com/45451201/217270153-73d865d0-dc25-4176-b5eb-af2e9afb507e.png)
 
 To learn more about Doctest, see https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
 
