@@ -2,6 +2,7 @@
 
 - [Creating a repository](#creating-a-repository)
 - [Cloning your repository](#cloning-your-repository)
+- [Compiling](#compiling)
 - [Writing tests](#writing-tests)
 - [CI](#ci)
 
@@ -25,6 +26,19 @@ The `--recursive` is very important because [we make use of submodules](https://
 
 ## Writing tests
 
-This template comes with the [Doctest](https://github.com/doctest/doctest) testing library.
+This template comes with the [Doctest](https://github.com/doctest/doctest) testing library all set up.
+You can simply write something like
+
+```cpp
+TEST_CASE("Addition is commutative")
+{
+    CHECK(1 + 2 == 2 + 1);
+    CHECK(4 + 7 == 7 + 4);
+}
+```
+
+in *any* source file and the tests will run whenever you run your project. You will see their output in the console.
+
+To learn more about Doctest, see https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
 
 ## CI
