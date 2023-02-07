@@ -1,12 +1,18 @@
+#include <stdlib.h>
+#include "p6/p6.h"
 #define DOCTEST_CONFIG_IMPLEMENT
 #include "doctest/doctest.h"
-#include "p6/p6.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-    // Run the tests
-    if (doctest::Context{}.run() != 0)
-        return EXIT_FAILURE;
+    { // Run the tests
+        if (doctest::Context{}.run() != 0)
+            return EXIT_FAILURE;
+        // The CI does not have a GPU so it cannot run the rest of the code.
+        const bool no_gpu_available = argc >= 2 && strcmp(argv[1], "-nogpu") == 0; // NOLINT(cppcoreguidelines-pro-bounds-pointer-arithmetic)
+        if (no_gpu_available)
+            return EXIT_SUCCESS;
+    }
 
     // Actual app
     auto ctx = p6::Context{{.title = "p6"}};
