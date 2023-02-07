@@ -44,3 +44,5 @@ in *any* source file and the tests will run whenever you run your project. You w
 To learn more about Doctest, see https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
 
 ## CI
+
+![image](https://user-images.githubusercontent.com/45451201/217274801-37bc38bd-055a-4a84-89b9-e2d56c798b2f.png)
