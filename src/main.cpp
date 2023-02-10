@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include <cstdlib>
 #include "p6/p6.h"
 #define DOCTEST_CONFIG_IMPLEMENT
 #include "doctest/doctest.h"
