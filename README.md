@@ -3,8 +3,6 @@
 This template contains all the things you need to get started with a clean and modern C++ project (formatter, linter, tests, continuous integration, etc.).
 **It works on all platforms (Windows, Linux, MacOS).**
 
-> **Please read the first three chapters very carefully as this project requires some specific setup, in particular when downloading (cloning) the repository.**
-
 - [Setting up](#setting-up)
   - [Creating a repository](#creating-a-repository)
   - [Downloading your repository](#downloading-your-repository)
@@ -36,10 +34,8 @@ Otherwise simply create a repository on your own and copy-paste all the files in
 Run this command inside the directory where you want to put this project:
 
 ```
-git clone --recursive your_repo_url
+git clone your_repo_url
 ```
-
-**NB:** The `--recursive` is very important here because [we make use of submodules](https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/lessons/git-submodules/).
 
 ### Compiling
 
