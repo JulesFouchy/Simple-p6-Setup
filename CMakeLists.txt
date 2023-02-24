@@ -44,7 +44,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE doctest::doctest)
 FetchContent_Declare(
     p6
     GIT_REPOSITORY https://github.com/julesfouchy/p6
-    GIT_TAG 17695962b048ce20e953a5a38aecb925da77ec44
+    GIT_TAG 5ea8da5a4c9e4904319843424766166744fcf460
 )
 FetchContent_MakeAvailable(p6)
 target_link_libraries(${PROJECT_NAME} PRIVATE p6::p6)
