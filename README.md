@@ -29,6 +29,8 @@ First, create your own repository based on this one. If you are using GitHub you
 
 Otherwise simply create a repository on your own and copy-paste all the files in this repo to your new repo.
 
+**NB:** you might also want to change or remove the LICENSE file. Your project does not need to use the same license as the one we use for this template.
+
 ### Downloading your repository
 
 Run this command inside the directory where you want to put this project:
