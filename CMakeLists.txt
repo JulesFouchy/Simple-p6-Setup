@@ -16,7 +16,7 @@ target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_20)
 if(MSVC)
     target_compile_options(${PROJECT_NAME} PRIVATE /W4)
 else()
-    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic -pedantic-errors)
+    target_compile_options(${PROJECT_NAME} PRIVATE -Wall -Wextra -Wpedantic -pedantic-errors -Wimplicit-fallthrough)
 endif()
 
 # ---Maybe enable warnings as errors---
