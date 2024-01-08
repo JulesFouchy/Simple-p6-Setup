@@ -16,7 +16,6 @@ This template contains all the things you need to get started with a clean and m
   - [p6](#p6)
 - [Going further](#going-further)
   - [Writing tests](#writing-tests)
-  - [Continuous Integration (CI)](#continuous-integration-ci)
   - [Warnings as errors](#warnings-as-errors)
 
 ## Setting up
@@ -56,7 +55,7 @@ You should see this, with the circle following your mouse cursor:
 
 ### Clangd
 
-First, you need to [install and setup *clangd*](https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/lessons/clangd/). It will provide even better C++ support than the default extensions, and is also required for the other tools to work.
+First, you need to [install and setup _clangd_](https://julesfouchy.github.io/Learn--Clean-Code-With-Cpp/lessons/clangd/). It will provide even better C++ support than the default extensions, and is also required for the other tools to work.
 
 ### Formatter
 
@@ -71,6 +70,7 @@ First, you need to [install and setup *clangd*](https://julesfouchy.github.io/Le
 ### Renaming the project
 
 If you want to rename the project (called "Simple-p6-Setup" by default), you need to change it in 3 places:
+
 - In the `CMakeLists.txt`, change the line `project(Simple-p6-Setup)`
 - In the `.github/workflows/build_and_run_tests.yml`, change the line `TARGET: Simple-p6-Setup`
 - In the `src/main.cpp`, change the line `auto ctx = p6::Context{{.title = "Simple-p6-Setup"}};`
@@ -94,7 +94,7 @@ src
 
 ### p6
 
-*p6* is a 2D-drawing library that is designed to be extremely simple to use. In order to learn how to use it, [read their tutorials](https://julesfouchy.github.io/p6-docs/tutorials/the-context). (Note that you can skip the first chapter "Creating a project" as this template already does everything you need).
+_p6_ is a 2D-drawing library that is designed to be extremely simple to use. In order to learn how to use it, [read their tutorials](https://julesfouchy.github.io/p6-docs/tutorials/the-context). (Note that you can skip the first chapter "Creating a project" as this template already does everything you need).
 
 ## Going further
 
@@ -111,29 +111,18 @@ TEST_CASE("Addition is commutative")
 }
 ```
 
-in *any* source file and the tests will run whenever you run your project. You will see their output in the console:
+in _any_ source file and the tests will run whenever you run your project. You will see their output in the console:
 
 ![tests-output](https://user-images.githubusercontent.com/45451201/217270153-73d865d0-dc25-4176-b5eb-af2e9afb507e.png)
 
 To learn more about Doctest, see https://github.com/doctest/doctest/blob/master/doc/markdown/tutorial.md
 
-### Continuous Integration (CI)
-
-> NB: This requires that you are using GitHub. GitLab also provides the same kinds of services, but you will have to set them up on your own, this template doesn't provide the necessary config files.
-
-Whenever you make a commit, GitHub servers will automatically try to build your code and run your tests and, if anything fails, it will warn you. CI is an essential part of development, as it ensures that you notice immediately if you break something. It also allows you to test your code on all the platforms (Windows, Linux, MacOS) and all the compilers (Clang, GCC, MSVC) and benefit from all the warnings they have to offer.
-
-You can see the progress (and eventual errors) of your tests in the *Actions* tab of your GitHub repository.
-
-![image](https://user-images.githubusercontent.com/45451201/217274801-37bc38bd-055a-4a84-89b9-e2d56c798b2f.png)
-
-You will also receive an email if something fails.
-
 ### Warnings as errors
 
 Warnings are usually only considered as errors during the CI process (so that any warning is considered a failure and gets reported to you).
 If you want to have warnings as errors in your local project too (typically in order to fix a warning shown by the CI):
- - <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> (to open VSCode's command palette)
- - Search for `CMake: Edit CMake Cache (UI)`
- - Turn `WARNINGS_AS_ERRORS` ON and then save
-![image](https://user-images.githubusercontent.com/45451201/217280969-48939e75-0bad-4a9f-bdf6-08e37649c4c6.png)
+
+- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> (to open VSCode's command palette)
+- Search for `CMake: Edit CMake Cache (UI)`
+- Turn `WARNINGS_AS_ERRORS` ON and then save
+  ![image](https://user-images.githubusercontent.com/45451201/217280969-48939e75-0bad-4a9f-bdf6-08e37649c4c6.png)
