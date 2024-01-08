@@ -35,7 +35,7 @@ include(FetchContent)
 FetchContent_Declare(
     doctest
     GIT_REPOSITORY https://github.com/doctest/doctest
-    GIT_TAG eb000cbfc912ca0e7286cfd3f961c21f7669aa5e
+    GIT_TAG ae7a13539fb71f270b87eb2e874fbac80bc8dda2
 )
 FetchContent_MakeAvailable(doctest)
 target_link_libraries(${PROJECT_NAME} PRIVATE doctest::doctest)
@@ -44,7 +44,7 @@ target_link_libraries(${PROJECT_NAME} PRIVATE doctest::doctest)
 FetchContent_Declare(
     p6
     GIT_REPOSITORY https://github.com/julesfouchy/p6
-    GIT_TAG 350bf29ec49f43c8600c7e0dbc6099091367c752
+    GIT_TAG 7a9d1ca49db2694ef05030921b65f0adfe9d69e4
 )
 FetchContent_MakeAvailable(p6)
 target_link_libraries(${PROJECT_NAME} PRIVATE p6::p6)
