@@ -41,6 +41,7 @@ FetchContent_MakeAvailable(doctest)
 target_link_libraries(${PROJECT_NAME} PRIVATE doctest::doctest)
 
 # ---Add p6 library---
+# set(P6_RAW_OPENGL_MODE ON CACHE BOOL "") # You need to press F1 and use "CMake: Delete Cache and Reconfigure" when enabling this option.
 FetchContent_Declare(
     p6
     GIT_REPOSITORY https://github.com/julesfouchy/p6
