@@ -1,6 +1,7 @@
 ---
 Checks: '
   *,
+  -*use-anonymous-namespace
   -misc-non-private-member-variables-in-classes,
   -*braces-around-statements
   -readability-implicit-bool-conversion
