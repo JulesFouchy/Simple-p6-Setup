@@ -1,7 +1,11 @@
 ---
 Checks: '
-  *,
-  -*use-anonymous-namespace
+  *,  
+  -modernize-use-trailing-return-type,
+  -modernize-use-nodiscard,
+  -bugprone-exception-escape,
+  -concurrency-mt-unsafe,
+  -readability-convert-member-functions-to-static,
   -misc-non-private-member-variables-in-classes,
   -*braces-around-statements
   -readability-implicit-bool-conversion
@@ -9,9 +13,16 @@ Checks: '
   -cppcoreguidelines-avoid-magic-numbers,
   -readability-magic-numbers,
   -readability-redundant-access-specifiers,
+  -readability-else-after-return,
+  -readability-convert-member-functions-to-static,
+  -*braces-around-statements,
+  -readability-implicit-bool-conversion,
+  -readability-identifier-length,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -readability-redundant-member-init,
   -readability-redundant-string-init,
-  -modernize-use-trailing-return-type,
-  -modernize-use-nodiscard,
+  -misc-use-anonymous-namespace,
   -cppcoreguidelines-pro-type-union-access,
   -cppcoreguidelines-pro-bounds-array-to-pointer-decay, -hicpp-no-array-decay,
   -hicpp-signed-bitwise,
@@ -35,4 +46,4 @@ Checks: '
   -objc-*,
   -openmp-*,
   -zircon-*,
-  '
+'

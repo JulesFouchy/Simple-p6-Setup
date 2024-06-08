@@ -72,7 +72,6 @@ First, you need to [install and setup _clangd_](https://julesfouchy.github.io/Le
 If you want to rename the project (called "Simple-p6-Setup" by default), you need to change it in 3 places:
 
 - In the `CMakeLists.txt`, change the line `project(Simple-p6-Setup)`
-- In the `.github/workflows/build_and_run_tests.yml`, change the line `TARGET: Simple-p6-Setup`
 - In the `src/main.cpp`, change the line `auto ctx = p6::Context{{.title = "Simple-p6-Setup"}};`
 
 ### Folder structure
@@ -119,7 +118,6 @@ To learn more about Doctest, see https://github.com/doctest/doctest/blob/master/
 
 ### Warnings as errors
 
-Warnings are usually only considered as errors during the CI process (so that any warning is considered a failure and gets reported to you).
 If you want to have warnings as errors in your local project too (typically in order to fix a warning shown by the CI):
 
 - <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> (to open VSCode's command palette)
